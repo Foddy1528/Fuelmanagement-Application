@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="application.NewSceneController"
+            prefWidth="700" prefHeight="500">
+    <children>
+        <VBox spacing="10" layoutX="20" layoutY="20">
+            <children>
+
+                <Label text="Select Brand:" />
+                <ChoiceBox fx:id="brandChoiceBox" prefWidth="200"/>
+
+                <HBox spacing="5">
+                    <children>
+                        <TextField fx:id="newBrandField" promptText="New brand" prefWidth="150"/>
+                        <Button fx:id="addBrandButton" text="Add Brand"/>
+                    </children>
+                </HBox>
+
+                <Label text="Select Model:"/>
+                <ChoiceBox fx:id="modelChoiceBox" prefWidth="300"/>
+
+                <HBox spacing="5">
+                    <children>
+                        <TextField fx:id="newModelField" promptText="New model" prefWidth="200"/>
+                        <TextField fx:id="newModelFuelField" promptText="Fuel (e.g., 6.2l/100km)" prefWidth="150"/>
+                        <Button fx:id="addModelButton" text="Add Model"/>
+                    </children>
+                </HBox>
+
+                <Label text="Fuel Consumption:"/>
+                <TextField fx:id="fuelTankTextField" promptText="Enter or edit fuel info" prefWidth="200"/>
+
+                <Separator/>
+
+                <Label text="Selected Brand:"/>
+                <Label fx:id="selectedBrandLabel"/>
+
+                <Label text="Selected Model:"/>
+                <Label fx:id="selectedModelLabel"/>
+
+                <Label text="Fuel Consumption:"/>
+                <Label fx:id="selectedFuelLabel"/>
+
+            </children>
+            <padding><Insets top="20" left="20" right="20" bottom="20"/></padding>
+        </VBox>
+    </children>
+</AnchorPane>
